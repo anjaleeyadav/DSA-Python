@@ -1,43 +1,51 @@
 # 1. Write a program to print multiplication table of a given number using for loop
 
-# a = int(input("Enter number :"))
+def question1():
+    a = int(input("Enter number :"))
 
-# for i in range(1,11,1):
-#     print(a,"x",i,"=",a*i)
+    for i in range(1,11,1):
+        print(a,"x",i,"=",a*i)
 
+# question1()
 
 # 2. Write a program to greet all the person names stored in a list ‘l’ and which starts with S.
 # l = ["Harry", "Soham", "Sachin", "Rahul"]
 
-# l = ["Harry", "Soham", "Sachin", "Rahul"]
+def question2():
+    l = ["Harry", "Soham", "Sachin", "Rahul"]
 
-# for name in l:
-#     if name.startswith("S"):
-#         print("Good Morning",name)
+    for name in l:
+        if name.startswith("S"):
+            print("Good Morning",name)
 
+# question2()
 
 # 3. Attempt problem 1 using while loop.
 
-# a = int(input("Enter number :"))
+def question3():
+    a = int(input("Enter number :"))
 
-# for i in range(1,11,1):
-#     print(a,"x",i,"=",a*i)
+    for i in range(1,11,1):
+        print(a,"x",i,"=",a*i)
 
+# question3()
 
 # 4. Write a program to find whether a given number is prime or not.
 
-num = int(input("Enter number :"))
+def question4():
+    num = int(input("Enter number :"))
 
-if num <= 1:
-    print("Not prime")
-else: 
-    for i in range(2,num):
-        if num % i ==0:
-            print("Not prime")
-            break
-    else:
-        print("prime")
+    if num <= 1:
+        print("Not prime")
+    else: 
+        for i in range(2,num):
+            if num % i ==0:
+                print("Not prime")
+                break
+        else:
+            print("prime")
 
+question4()
 
 
 # 5. Write a program to find the sum of first n natural numbers using while loop.
