@@ -45,31 +45,81 @@ def question4():
         else:
             print("prime")
 
-question4()
+# question4()
 
 
 # 5. Write a program to find the sum of first n natural numbers using while loop.
 
+def question5():
+    a = int(input("enter number :"))
+
+    i= 1
+    sum = 0
+    while i <= a:
+        sum = sum +i
+        i = i+1
+    print(sum) 
+
+# question5()
 
 # 6. Write a program to calculate the factorial of a given number using for loop.
 
+def question6():
+    n = int(input("Enter number : "))
+
+    fact = 1
+    i = 1
+    for i in range(1,n+1):
+        fact = fact * i
+    print(fact)
+
+# question6()
 
 # 7. Write a program to print the following star pattern.
 # *
 # ***
 # ***** for n = 3
 
+def question7():
+
+    n = 3
+    for i in range(1,n+1):
+        print("*" * ((2 * i )- 1))
+
+# question7()
 
 # 8. Write a program to print the following star pattern:
 # *
 # **
 # *** for n = 3
 
+def question8():
+    n = 5
+    for i in range(1,n+1,2):
+        print("*" * ((2 * i) - i))
+
+# question8()
 
 # 9. Write a program to print the following star pattern.
 # * * *
 # * * for n = 3
 # * * *
 
+def question9():
+    n = 3
+    for i in range(1,n+1):
+        if i ==2:
+            print("* *")
+        else:
+            print("* * *")
+# question9()
 
 # 10. Write a program to print multiplication table of n using for loops in reversed order.
+
+def question10():
+    n = int(input("Enter number :"))
+    for i in range(10,0,-1):
+        print(n,"*",i,"=",n*i)
+
+question10()
+
