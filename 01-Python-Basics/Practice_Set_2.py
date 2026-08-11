@@ -1,5 +1,14 @@
 # 1. Write a program using functions to find greatest of three numbers.
 
+def greatest(a =10, b= 20,c=9):
+    if a>b and a>c:
+        print(a, "is greatest number")
+    elif b>a and b>c :
+        print(b, "is greatest number")
+    else:
+        print(c, "is greatest number")
+
+greatest(c=74)
 
 # 2. Write a python program using function to convert Celsius to Fahrenheit.
 
@@ -21,7 +30,7 @@ def question5():
     for i in range(1,n+1):
         print("*" * (6 -(2 +i)))
 
-question5()
+# question5()
 
 # 6. Write a python function which converts inches to cms.
 
