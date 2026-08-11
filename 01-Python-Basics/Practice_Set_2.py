@@ -16,14 +16,14 @@ print("greatest number is",greatest())
 
 # 2. Write a python program using function to convert Celsius to Fahrenheit.
 
-# def celsius_to_faheren(celsius):
-#     Fahrenheit = (celsius *(9/5)) +32
-#     return Fahrenheit
+def celsius_to_faheren(celsius):
+    Fahrenheit = (celsius *(9/5)) +32
+    return Fahrenheit
 
-# celsius = int(input("Enter celsius :"))
+celsius = int(input("Enter celsius :"))
 
-# result = celsius_to_faheren(celsius)
-# print("Faherenheit is :",result)
+result = celsius_to_faheren(celsius)
+print("Faherenheit is :",result)
 
 # 3. How do you prevent a python print() function to print a new line at the end.
 
@@ -52,7 +52,7 @@ def question5():
     for i in range(1,n+1):
         print("*" * (6 -(2 +i)))
 
-# question5()
+question5()
 
 # 6. Write a python function which converts inches to cms.
 
