@@ -45,5 +45,3 @@ print(string.replace("  "," "))
 # letter = "Dear anjali, This is the python practice seesion. All the best!"
 
 print("Dear anjali,\n\tThis is the python practice seesion.\nAll the best!")
-
-# letter = "Dear Harry, this python course is nice. Thanks!"
