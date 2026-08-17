@@ -13,9 +13,8 @@ for num in l1:
 
 print(greatest)
 
-# 2. Write a program to find out whether a student has passed or failed if it requires a total of
-# 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an
-# input from the user.
+# 2. Write a program to find out whether a student has passed or failed if it requires a total of 40% and at least 33% in each 
+# subject to pass. Assume 3 subjects and take marks as an input from the user.
 
 l2 = []
 
@@ -35,17 +34,32 @@ else:
     print("Fail")
 
 
-# 3. A spam comment is defined as a text containing following keywords: “Make a lot of
-# money”, “buy now”, “subscribe this”, “click this”. Write a program to detect these spams.
+# 3. A spam comment is defined as a text containing following keywords: “Make a lot of money”, “buy now”, “subscribe this”,
+#  “click this”. Write a program to detect these spams.
 
+comment = input("message : ")
+if 'Make a lot of money' in comment or 'buy now' in comment or 'subscribe this' in comment or 'click this' in comment:
+    print("Spam")
+else:
+    print("Not Spam")
 
 # 4. Write a program to find whether a given username contains less than 10 characters or not.
 
-
+name = input('Enter username :')
+if len(name) < 10:
+    print("It is less than 10 characters")
+else :
+    print("Not less than 10 characters")
 
 # 5. Write a program which finds out whether a given name is present in a list or not.
 
+l3 = ['priya','sunny','amol','latika']
+name = input("Enter name :")
 
+if name in l3:
+    print(name,'is present in list')
+else :
+    print('Not in list')
 
 # 6. Write a program to calculate the grade of a student from his marks from the following
 # scheme:
