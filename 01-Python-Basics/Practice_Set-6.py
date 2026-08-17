@@ -1,17 +1,17 @@
 # 1. Write a program to find the greatest of four numbers entered by the user.
 
-# l1 = []
-# for i in range(1,5):
-#     num = int(input("Enter num :"))
-#     l1.append(num)
-# print(l1)
+l1 = []
+for i in range(1,5):
+    num = int(input("Enter num :"))
+    l1.append(num)
+print(l1)
 
-# greatest = l1[0]
-# for num in l1:
-#     if num > greatest:
-#         greatest = num
+greatest = l1[0]
+for num in l1:
+    if num > greatest:
+        greatest = num
 
-# print(greatest)
+print(greatest)
 
 # 2. Write a program to find out whether a student has passed or failed if it requires a total of
 # 40% and at least 33% in each subject to pass. Assume 3 subjects and take marks as an
