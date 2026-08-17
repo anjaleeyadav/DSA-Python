@@ -15,11 +15,11 @@ else:
 
 # 2. Write a program to input eight numbers from the user and display all the unique numbers (once).
 
-# num = set()
-# for i in range(8):
-#     value = int(input(f"Enter number {i+1}:"))
-#     num.add(value)
-# print(num)
+num = set()
+for i in range(8):
+    value = int(input(f"Enter number {i+1}:"))
+    num.add(value)
+print(num)
 
 
 # 3. Can we have a set with 18 (int) and '18' (str) as a value in it?
@@ -33,18 +33,18 @@ print(set)
 # s.add(20.0)
 # s.add('20') # length of s after these operations?
 
-# my_set = set()
-# my_set.add(20)  # 20 ==20.0 --> 20 ,both same in set
-# my_set.add(20.0)
-# my_set.add('20')
+my_set = set()
+my_set.add(20)  # 20 ==20.0 --> 20 ,both same in set
+my_set.add(20.0)
+my_set.add('20')
 
-# print(my_set)
-# print(len(my_set))
+print(my_set)
+print(len(my_set))
 
 # 5. s = {}
 # What is the type of 's'?
 
-s1 = {}
+s1 = set()
 print(type(s1))
 
 # 6. Create an empty dictionary. Allow 4 friends to enter their favorite language as value and use key as their names. Assume that the names are unique.
@@ -61,13 +61,23 @@ print(friends)
 
 # 7. If the names of 2 friends are same; what will happen to the program in problem 6?
 
+#    Because Key is always unique--
+# ----->>  it will assign the last one language to the name and make 2 records into one record. 
 
 
 
 # 8. If languages of two friends are same; what will happen to the program in problem 6?
 
-
+# ----->>  value can be repeated 
+#  ---->> it print all 4 friends with their language.
 
 
 # 9. Can you change the values inside a list which is contained in set S?
 # s = {8, 7, 12, "Harry", [1,2]}
+
+# No, we cannot change the values inside a list contained in a set because a list cannot be contained in a set in Python. Lists are mutable and sets require hashable elements.
+
+# # s = {8, 7, 12,}
+# s.remove(8)
+# print(type(s))
+# print(s)
