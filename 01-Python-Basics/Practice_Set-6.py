@@ -85,3 +85,12 @@ else:
 
 
 # 7. Write a program to find out whether a given post is talking about “Harry” or not.
+
+post = input('Enter post :')
+if "Harry" in post:
+    print('talking about Harry')
+else:
+    print('Not talking about Harry')
+
+
+
