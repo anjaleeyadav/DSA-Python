@@ -13,9 +13,35 @@ else:
 # ‘Hi-score.txt’ which is either blank or contains the previous Hi-score. You need to write a program to update the Hi-score 
 # whenever the game() function breaks the Hi-score.
 
+def game():
+    score = int(input("Current score :"))
+    return score
 
 
+def hi_core():
+    with open('high_score.txt','r') as f:
+        old_score = int(f.read())
+    return old_score
 
+
+def result(score, old_score):
+    print(score)
+    print(old_score)
+
+    if score > old_score:
+        print('New highest score is :',score)
+
+        with open('high_score.txt','w') as f:
+            new = f.write(str(score))
+
+
+    elif score <= old_score:
+        print("Old high score remains")
+
+
+score = game()
+old_score = hi_core()
+result(score, old_score)
 # 3. Write a program to generate multiplication tables from 2 to 20 and write it to the different files. Place these files in 
 # a folder for a 13-year-old.  
 
