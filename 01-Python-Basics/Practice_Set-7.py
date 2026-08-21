@@ -94,7 +94,13 @@ with open('repeated.txt','w')as f:
 
 # 6. Write a program to mine a log file and find out whether it contains ‘python’.
 
+with open('log.txt','r') as f:
+    text = f.read()
 
+if 'Python' in text:
+    print('Python is present in the log file')
+else:
+    print("Python is not present in the log file")
 
 
 
