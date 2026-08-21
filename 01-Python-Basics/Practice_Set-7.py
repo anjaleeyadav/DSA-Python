@@ -67,7 +67,13 @@ for i in range(2,21):
 # 4. A file contains a word “Donkey” multiple times. You need to write a program which replaces this word with ##### by updating 
 # the same file.
 
+with open('repeated.txt','r') as f:
+    text = f.read()
 
+text = text.replace('Donkey','#####')
+
+with open('repeated.txt','w') as f:
+    f.write(text)
 
 
 # 5. Repeat program 4 for a list of such words to be censored.
