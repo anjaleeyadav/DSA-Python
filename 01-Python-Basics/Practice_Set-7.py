@@ -42,11 +42,27 @@ def result(score, old_score):
 score = game()
 old_score = hi_core()
 result(score, old_score)
+
+
 # 3. Write a program to generate multiplication tables from 2 to 20 and write it to the different files. Place these files in 
 # a folder for a 13-year-old.  
 
+import os
+
+os.makedirs('tables', exist_ok= True)
+
+for i in range(2,21):
+    with open(f'tables/tables_{i}.txt','w') as f:
+        for j in range(1,11):
+            f.write(f"{i} * {j} = {i*j}\n")
 
 
+#   --> to remove all the files 
+
+# import os
+# for i in range(2,21):
+#     if os.path.exists(f"tables_{i}.txt"):
+#         os.remove(f"tables_{i}.txt")
 
 # 4. A file contains a word “Donkey” multiple times. You need to write a program which replaces this word with ##### by updating 
 # the same file.
