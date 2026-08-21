@@ -78,8 +78,19 @@ with open('repeated.txt','w') as f:
 
 # 5. Repeat program 4 for a list of such words to be censored.
 
+list = ['stubborn','slept','wild','kicked']
+
+with open('repeated.txt','r')as f:
+        text = f.read()
 
 
+for i in list:
+        if i in text:
+            text = text.replace(i,'@@Censored Word@@')
+
+with open('repeated.txt','w')as f:
+    f.write(text)
+        
 
 # 6. Write a program to mine a log file and find out whether it contains ‘python’.
 
