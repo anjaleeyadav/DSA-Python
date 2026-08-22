@@ -3,6 +3,8 @@
 with open('poems.txt','r') as f:
     text = f.read()
 print(text)
+
+
 if 'twinkle' in text:
     print('\ntwinkle is there' )
 else:
@@ -106,15 +108,24 @@ else:
 
 # 7. Write a program to find out the line number where python is present from ques 6.
 
+with open('log.txt','r') as f:
+    text = f.read()
 
-
-
+for i in text:
+    if i == "Python":
+        print
 
 # 8. Write a program to make a copy of a text file “this.txt”.
 
+with open('this.txt','r')as f:
+    text = f.read()
+
+with open('copy.txt','w')as f:
+    s = f.write(text)
 
 
-
+#   'x' → sirf nayi file create karega. Agar file already hai → error.
+#   'w' → file nahi hai to create karega; agar already hai to purana content overwrite karega.
 
 
 # 9. Write a program to find out whether a file is identical and matches the content of another file.
