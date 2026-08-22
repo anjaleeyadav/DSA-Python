@@ -154,5 +154,3 @@ with open('copy.txt','w') as f:
 import os 
 
 os.rename('python.txt','renamed_by_python.txt')
-
-
