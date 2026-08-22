@@ -130,7 +130,16 @@ with open('copy.txt','w')as f:
 
 # 9. Write a program to find out whether a file is identical and matches the content of another file.
 
+with open('this.txt','r') as f:
+    text = f.read()
 
+with open('copy.txt','r') as f:
+    content = f.read()
+
+if text == content:
+    print('File is identical and matches the content of another file.')
+else:
+    print('File is not identical and does not matches the content of another file.')
 
 
 
