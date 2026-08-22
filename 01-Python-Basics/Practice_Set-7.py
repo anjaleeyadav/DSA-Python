@@ -145,10 +145,14 @@ else:
 
 # 10. Write a program to wipe out the content of a file using python.
 
-
+with open('copy.txt','w') as f:
+    pass
 
 
 # 11. Write a python program to rename a file to “renamed_by_python.txt”
 
+import os 
+
+os.rename('python.txt','renamed_by_python.txt')
 
 
