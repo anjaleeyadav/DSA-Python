@@ -9,7 +9,10 @@ class Programmer:
 
 # 2. Write a class “Calculator” capable of finding square, cube and square root of a number.
 
-
+class Calculator:
+    x = int(input('Enter number :'))
+    print(x**2)
+    print(x ** 0.5)
 
 # 3. Create a class with a class attribute a; create an object from it and set ‘a’ directly using ‘object.a = 0’. 
 # Does this change the class attribute?
