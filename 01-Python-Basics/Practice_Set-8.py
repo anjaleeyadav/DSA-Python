@@ -17,7 +17,14 @@ class Calculator:
 # 3. Create a class with a class attribute a; create an object from it and set ‘a’ directly using ‘object.a = 0’. 
 # Does this change the class attribute?
 
+class Test:
+    a = 10
 
+obj = Test()
+obj.a = 0
+
+print(obj.a)      
+print(Test.a)
 
 
 # 4. Add a static method in problem 2, to greet the user with hello.
