@@ -30,7 +30,19 @@ print(Test.a)
 # 4. Add a static method in problem 2, to greet the user with hello.
 
 
+class Employee:
+    a = 10
 
+    def show(self):
+        print("This is an employee")
+
+    @staticmethod
+    def greet():
+        print("Hello")
+
+
+e = Employee()
+e.greet()
 
 # 5. Write a Class ‘Train’ which has methods to book a ticket, get status (no of seats) and get fare information of train 
 # running under Indian Railways.
