@@ -82,7 +82,7 @@ train.get_status()
 # 6. Can you change the self-parameter inside a class to something else (say “harry”)? Try changing self to “slf” or “harry” 
 # and see the effects.
 
-class Stu:
+class Student:
     def __init__(harry, name):
         harry.name = name
 
@@ -90,5 +90,5 @@ class Stu:
         print("Name:", slf.name)
 
 
-s = Stu("Anjali")
+s = Student("Anjali")
 s.show()
