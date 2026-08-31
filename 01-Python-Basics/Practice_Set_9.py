@@ -77,6 +77,7 @@ print(e.salaryAfterIncrement)
 
 e.salaryAfterIncrement = 55000
 
+print(e.increment)
 
 
 
