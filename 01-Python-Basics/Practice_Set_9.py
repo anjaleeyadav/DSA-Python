@@ -31,7 +31,27 @@ v3.show()
 # 2. Create a class ‘Pets’ from a class ‘Animals’ and further create a class ‘Dog’ from ‘Pets’.
 # Add a method ‘bark’ to class ‘Dog’.
 
+class Animals:
+    def eat(self):
+        print("Animals can eat")
 
+
+class Pets(Animals):
+    def play(self):
+        print("Pets can play")
+
+
+class Dog(Pets):
+    def bark(self):
+        print("Dog barks: Woof Woof!")
+
+
+# Creating object of Dog
+d = Dog()
+
+d.eat()    # Method from Animals
+d.play()   # Method from Pets
+d.bark()   # Method from Dog
 
 
 
